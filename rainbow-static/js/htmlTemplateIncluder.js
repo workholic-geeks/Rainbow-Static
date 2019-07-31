@@ -10,7 +10,7 @@ function emptyAllSections(){
 	clearInterval(intervalId);
 }
 function preLoadHeader() {	
-	var url = "http://" + hostName  + "/rainbow/header.html";
+	var url = "http://" + hostName  + "/header.html";
 	$("#header").load(url);
 }
 
@@ -26,12 +26,12 @@ $(document).ready(function() {
 });
 
 function loadFooter() {
-	var url = "http://" + hostName  + "/rainbow/footer.html";
+	var url = "http://" + hostName  + "/footer.html";
 	$("#homepage").empty();
 	$("#footer").load(url);
 }
 function callIconLoader() {
-	var url = "http://" + hostName  + "/rainbow/calllogoinallpages.html";
+	var url = "http://" + hostName  + "/calllogoinallpages.html";
 	$("#homepage").empty();
 	$("#calllogoinallpages").load(url);
 }
@@ -39,7 +39,7 @@ function callIconLoader() {
 function homePage() {
 	emptyAllSections();
 	removeAll();
-	var url = "http://" + hostName  + "/rainbow/homepage.html";
+	var url = "http://" + hostName  + "/homepage.html";
 	$("#welcome").load(url,function(){
 		loadHomePageSlider();
 	});
@@ -56,7 +56,7 @@ function loadCalculator() {
 	emptyAllSections();
 	removeAll();
 	callIconLoader();
-	var url = "http://" + hostName  + "/rainbow/emiCalculator.html";
+	var url = "http://" + hostName  + "/emiCalculator.html";
 	$("#welcome").load(url);	
 	active("#calculatorLink");
 }
@@ -65,7 +65,7 @@ function loadContactUs() {
 	emptyAllSections();
 	removeAll();
 	callIconLoader();
-	var url = "http://" + hostName  + "/rainbow/contactUSForm.html";
+	var url = "http://" + hostName  + "/contactUSForm.html";
 	$("#welcome").load(url);
 	active("#contactUsLink");
 }
@@ -73,7 +73,7 @@ function loadMap() {
 	emptyAllSections();
 	removeAll();
 	callIconLoader();
-	var url = "http://" + hostName  + "/rainbow/map.html";
+	var url = "http://" + hostName  + "/map.html";
 	$("#welcome").load(url);
 	active("#mapLink");
 }
@@ -83,7 +83,7 @@ function loadFaq() {
 	emptyAllSections();
 	removeAll();
 	callIconLoader();
-	var url = "http://" + hostName  + "/rainbow/faq.html";
+	var url = "http://" + hostName  + "/faq.html";
 	$("#welcome").load(url);
 	active("#faqLink");
 }
@@ -91,7 +91,7 @@ function loadAboutUs() {
 	emptyAllSections();
 	removeAll();
 	callIconLoader();
-	var url = "http://" + hostName  + "/rainbow/aboutUs.html";
+	var url = "http://" + hostName  + "/aboutUs.html";
 	$("#welcome").load(url);
 	active("#aboutUsLink");
 }
@@ -99,14 +99,14 @@ function loadCheckListQuestion() {
 	emptyAllSections();
 	removeAll();
 	callIconLoader();
-	var url = "http://" + hostName  + "/rainbow/checkListQuestion.html";
+	var url = "http://" + hostName  + "/checkListQuestion.html";
 	$("#welcome").load(url);
 	active("#checkListQuestionLink");
 }
 function loadShortTermLoan(){
 	emptyAllSections();
 	removeAll();
-	$("#calllogoinallpages").load("http://" + hostName  + "/rainbow/shortTermEmiCalculator.html",function(){
+	$("#calllogoinallpages").load("http://" + hostName  + "/shortTermEmiCalculator.html",function(){
 		$("#rateOfInterest").hide();
 		var output = document.getElementById("rate1");
 		output.value = 42;
@@ -114,8 +114,8 @@ function loadShortTermLoan(){
 		lastTenor = document.getElementById("displayRepaymentmonth").value;
 		calculteEMI();
 	});
-	var url = "http://" + hostName  + "/rainbow/shortTermLoan.html";
-	$("#welcome").load("http://" + hostName  + "/rainbow/autoSliderShortTermLoan.html",function(){
+	var url = "http://" + hostName  + "/shortTermLoan.html";
+	$("#welcome").load("http://" + hostName  + "/autoSliderShortTermLoan.html",function(){
 		$("#slideshow > div:gt(0)").hide();
 		intervalId=setInterval(function() { 
 		  $('#slideshow > div:first')
@@ -133,7 +133,7 @@ function loadShortTermLoan(){
 function loadLongTermLoan(){
 	emptyAllSections();
 	removeAll();
-	$("#calllogoinallpages").load("http://" + hostName  + "/rainbow/longTermEmiCalculator.html",function(){
+	$("#calllogoinallpages").load("http://" + hostName  + "/longTermEmiCalculator.html",function(){
 		$("#rateOfInterest").hide();
 		var output = document.getElementById("rate1");
 		output.value = 42;
@@ -141,8 +141,8 @@ function loadLongTermLoan(){
 		lastTenor = document.getElementById("displayRepaymentmonth").value;
 		calculteEMI();
 	});
-	var url = "http://" + hostName  + "/rainbow/longTermLoan.html";
-	$("#welcome").load("http://" + hostName  + "/rainbow/autoSliderLongTermLoan.html",function(){
+	var url = "http://" + hostName  + "/longTermLoan.html";
+	$("#welcome").load("http://" + hostName  + "/autoSliderLongTermLoan.html",function(){
 		$("#slideshow > div:gt(0)").hide();
 		intervalId=setInterval(function() { 
 		  $('#slideshow > div:first')
@@ -160,7 +160,7 @@ function loadLongTermLoan(){
 function loadMediumTermLoan(){
 	emptyAllSections();
 	removeAll();
-	$("#calllogoinallpages").load("http://" + hostName  + "/rainbow/mediumTermEmiCalculator.html",function(){
+	$("#calllogoinallpages").load("http://" + hostName  + "/mediumTermEmiCalculator.html",function(){
 		$("#rateOfInterest").hide();
 		var output = document.getElementById("rate1");
 		output.value = 42;
@@ -168,8 +168,8 @@ function loadMediumTermLoan(){
 		lastTenor = document.getElementById("displayRepaymentmonth").value;
 		calculteEMI();
 	});
-	var url = "http://" + hostName  + "/rainbow/mediumTermLoan.html";
-	$("#welcome").load("http://" + hostName  + "/rainbow/autoSliderMediumTermLoan.html",function(){
+	var url = "http://" + hostName  + "/mediumTermLoan.html";
+	$("#welcome").load("http://" + hostName  + "/autoSliderMediumTermLoan.html",function(){
 		$("#slideshow > div:gt(0)").hide();
 
 		intervalId=setInterval(function() { 
@@ -189,7 +189,7 @@ function loadMediumTermLoan(){
 
 
 function loadHomePageSlider(){
-	$("#homeSlider").load("http://" + hostName  + "/rainbow/autoSliderHomePage.html",function(){
+	$("#homeSlider").load("http://" + hostName  + "/autoSliderHomePage.html",function(){
 		$("#slideshow > div:gt(0)").hide();
 		intervalId=setInterval(function() { 
 		  $('#slideshow > div:first')
